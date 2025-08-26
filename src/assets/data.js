@@ -1,9 +1,9 @@
-const trips = [
+export const trips = [
     {
         id: 1,
         title: "Avventura in Islanda",
         description: "Un viaggio tra geyser, cascate e paesaggi mozzafiato.",
-        image: "islanda.jpg",
+        image: "https://content.icelandtravel.is///wp-content/uploads/2019/03/Kirkjufell-mountain.jpg",
         start_date: "2025-09-10",
         end_date: "2025-09-20",
         price: 1800,
@@ -17,11 +17,11 @@ const trips = [
         id: 2,
         title: "Tour delle città d’arte italiane",
         description: "Scopri le meraviglie di Roma, Firenze e Venezia.",
-        image: "italia.jpg",
+        image: "https://s3.amazonaws.com/iexplore_web/images/assets/000/006/411/original/italy.jpg?1443530132",
         start_date: "2025-10-05",
         end_date: "2025-10-15",
         price: 1200,
-        highlighted: false,
+        highlighted: true,
         destination: "Italia",
         available_seats: 20,
         companions_id: [5,4,3]
@@ -31,7 +31,7 @@ const trips = [
         id: 3,
         title: "Safari in Kenya",
         description: "Vivi l’emozione della natura selvaggia africana.",
-        image: "kenya.jpg",
+        image: " https://sharewood.io/wp-content/uploads/2023/05/kenya--amboseli-national-park..jpg",
         start_date: "2025-11-01",
         end_date: "2025-11-12",
         price: 2500,
@@ -45,7 +45,7 @@ const trips = [
         id: 4,
         title: "Relax alle Maldive",
         description: "Spiagge bianche e mare cristallino per una vacanza da sogno.",
-        image: "maldive.jpg",
+        image: "https://cdn.forevervacation.com/uploads/blog/everything-you-need-to-know-about-the-maldives-the-vacationer-by-forevervacation-2003.jpeg",
         start_date: "2025-12-20",
         end_date: "2025-12-27",
         price: 3000,
@@ -59,7 +59,7 @@ const trips = [
         id: 5,
         title: "Trekking sulle Dolomiti",
         description: "Escursioni tra le montagne più belle d’Italia.",
-        image: "dolomiti.jpg",
+        image: "https://www.travelandleisure.com/thmb/e5d-hq0rnnGhMdVzI8ZbS4tdALM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-dolomites-lead-DOLOMITESTG1123-14220103213346f5a643fc6db0967caa.jpg",
         start_date: "2025-09-15",
         end_date: "2025-09-22",
         price: 900,
@@ -71,12 +71,12 @@ const trips = [
     }
 ];
 
-const companions = [
+export const companions = [
     {
         id: 1,
         name: "Luca",
         surname: "Rossi",
-        image: "luca.jpg",
+        image: "https://imgproxy.filmmakers.eu/Ec8jgDtmbEayGExnivq6KjLk7XmVDE3F2Istb0msXc8/rt:fit/w:3840/h:2160/czM6Ly9maWxtbWFr/ZXJzLWV1LXdlc3Qt/MS9wcm9kdWN0aW9u/LzM0MmQ2NTIwLTEz/MjctNDdmMi1hMDJi/LTdlMDlmNTc2YTQ4/ZS5qcGc",
         age: 28,
         nationality: "Italiana",
         interests: ["Trekking", "Fotografia"]
@@ -85,7 +85,7 @@ const companions = [
         id: 2,
         name: "Sara",
         surname: "Bianchi",
-        image: "sara.jpg",
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
         age: 32,
         nationality: "Italiana",
         interests: ["Arte", "Cucina"]
@@ -94,7 +94,7 @@ const companions = [
         id: 3,
         name: "David",
         surname: "Smith",
-        image: "david.jpg",
+        image: "https://imgproxy.filmmakers.eu/Y4iWTcgUQz3jIzxm5skh1sF_xReNQqVSjoBmXqkBQp8/rt:fit/w:3840/h:2160/czM6Ly9maWxtbWFr/ZXJzLWV1LXdlc3Qt/MS9wcm9kdWN0aW9u/L2Y2ZmE0ZWNjLTFm/ZDktNGFkMy05MzYy/LThlY2JiZDhhMzdj/MS5qcGc",
         age: 35,
         nationality: "Inglese",
         interests: ["Safari", "Natura"]
@@ -103,7 +103,7 @@ const companions = [
         id: 4,
         name: "Maria",
         surname: "Garcia",
-        image: "maria.jpg",
+        image: "https://images.unsplash.com/photo-1445053023192-8d45cb66099d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGVyc29ufGVufDB8fDB8fHww",
         age: 27,
         nationality: "Spagnola",
         interests: ["Spiaggia", "Yoga"]
@@ -112,7 +112,7 @@ const companions = [
         id: 5,
         name: "Giulia",
         surname: "Verdi",
-        image: "giulia.jpg",
+        image: "https://res.cloudinary.com/dvzi7iq88/image/upload/c_fill,dpr_auto,g_face/v1/magazine/images/1699461277-Cover-in-evidenza---Non-ridimensionare-(29)",
         age: 30,
         nationality: "Italiana",
         interests: ["Montagna", "Escursioni"]
