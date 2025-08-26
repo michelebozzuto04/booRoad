@@ -1,20 +1,24 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function HomePage() {
     return (
+        <>
         <div class="p-5 mb-4 bg-light rounded-3">
             <div class="container py-5">
-                <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                <h1 class="display-5 fw-bold">Benvenuti</h1>
                 <p class="col-md-8 fs-4">
-                    Using a series of utilities, you can create this jumbotron, just
-                    like the one in previous versions of Bootstrap. Check out the
-                    examples below for how you can remix and restyle it to your liking.
+                   Benvenuto su booRoad, il portale dedicato agli amanti dell’avventura e della scoperta! Qui troverai ispirazione per viaggi indimenticabili, itinerari personalizzati e consigli utili per ogni destinazione. Esplora nuove culture, paesaggi mozzafiato e esperienze autentiche pensate per te.
                 </p>
-                <button class="btn btn-primary btn-lg" type="button">
-                    Example button
-                </button>
+                <Link to='/trips' class="btn btn-primary btn-lg" type="button">
+                    vedi viaggi
+                </Link>
             </div>
         </div>
+        <section>
+            
+        </section>
+        </>
         
     )
 }
