@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
     return (
@@ -6,7 +7,7 @@ function Header() {
             className="navbar navbar-expand-sm navbar-light bg-light"
         >
             <div className="container">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <Link to={'/'} className="navbar-brand">BooRoad</Link>
                 <button
                     className="navbar-toggler d-lg-none"
                     type="button"
@@ -21,50 +22,24 @@ function Header() {
                 <div className="collapse navbar-collapse" id="collapsibleNavId">
                     <ul className="navbar-nav me-auto mt-2 mt-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#" aria-current="page"
+                            <NavLink className="nav-link" to={'/'} aria-current="page"
                             >Home
-                                <span className="visually-hidden">(current)</span></a
-                            >
+                                <span className="visually-hidden">(current)</span>
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link</a>
+                            <NavLink className="nav-link" to={'/trips'} aria-current="page"
+                            >Viaggi
+                                <span className="visually-hidden">(current)</span>
+                            </NavLink>
                         </li>
-                        <li className="nav-item dropdown">
-                            <a
-                                className="nav-link dropdown-toggle"
-                                href="#"
-                                id="dropdownId"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >Dropdown</a
-                            >
-                            <div
-                                className="dropdown-menu"
-                                aria-labelledby="dropdownId"
-                            >
-                                <a className="dropdown-item" href="#"
-                                >Action 1</a
-                                >
-                                <a className="dropdown-item" href="#"
-                                >Action 2</a
-                                >
-                            </div>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to={'/companions'} aria-current="page"
+                            >Accompagnatori
+                                <span className="visually-hidden">(current)</span>
+                            </NavLink>
                         </li>
                     </ul>
-                    <form className="d-flex my-2 my-lg-0">
-                        <input
-                            className="form-control me-sm-2"
-                            type="text"
-                            placeholder="Search"
-                        />
-                        <button
-                            className="btn btn-outline-success my-2 my-sm-0"
-                            type="submit"
-                        >
-                            Search
-                        </button>
-                    </form>
                 </div>
             </div>
         </nav>
