@@ -51,31 +51,31 @@ function SingleTripPage() {
           </div>
         </div>
 
-        <form onSubmit={()=>{alert('registrazione avvenuta con successo')}}>
+        <form onSubmit={() => { alert('registrazione avvenuta con successo') }}>
           <h3 className="mt-5">form di iscrizione al viaggio</h3>
-          <div class="form-group">
+          <div className="form-group">
             <div className="row">
-              <div className="col-4"><label for="exampleInputEmail1">nome</label>
-                <input type="text" class="form-control" id="Nome" aria-describedby="emailHelp" placeholder="Nome" />
+              <div className="col-4"><label htmlFor="exampleInputEmail1">nome</label>
+                <input type="text" className="form-control" id="Nome" aria-describedby="emailHelp" placeholder="Nome" />
               </div>
-              <div className="col-4"><label for="exampleInputEmail1">nome</label>
-                <input type="text" class="form-control" id="Cognome" aria-describedby="emailHelp" placeholder="Cognome" />
+              <div className="col-4"><label htmlFor="exampleInputEmail1">nome</label>
+                <input type="text" className="form-control" id="Cognome" aria-describedby="emailHelp" placeholder="Cognome" />
               </div>
               <div className="col-6">
-                <div class="form-group">
+                <div className="form-group">
                   <label htmlFor="Email">Email</label>
-                  <input type="Email" class="form-control" id="Email" placeholder="Email" />
+                  <input type="Email" className="form-control" id="Email" placeholder="Email" />
                 </div>
               </div>
               <div className="col-3">
-                <label htmlFor="">numero di telefono</label>
-                <input type="number" class="form-control" id="Number" placeholder="Numero di telefono" />
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary my-3">Submit</button>
-          </div>
-        </form>
-      </div>
+                <label htmlFor="tel">numero di telefono</label>
+                <input type="number" className="form-control" id="Number" placeholder="Numero di telefono" />
+              </div >
+            </div >
+            <button type="submit" className="btn btn-primary my-3">Submit</button>
+          </div >
+        </form >
+      </div >
     </>
   );
 }
