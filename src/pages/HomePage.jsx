@@ -28,12 +28,12 @@ function HomePage() {
             <div className="container mb-4">
                 <section id="trips">
                     <h1>Viaggi in evidenza</h1>
-                    <div className="row mt-3">
+                    <div className="row mt-3 g-3">
                         {trips.map((trip) => {
                             if (!trip.highlighted) return;
 
                             return (
-                                <div key={trip.id} className="col-3">
+                                <div key={trip.id} className="col-12 col-sm-6 col-md-3">
                                     <Link
                                         className="text-decoration-none text-reset"
                                         to={`trips/${trip.id}`}

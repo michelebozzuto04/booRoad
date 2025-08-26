@@ -10,7 +10,7 @@ function TripsPage() {
                 <div className="row my-3">
                     {trips.map((trip) => {
                         return (
-                            <div key={trip.id} className="col-4 g-3">
+                            <div key={trip.id} className="col-12 col-sm-6 col-md-4 g-3">
                                 <Link
                                     className="text-decoration-none text-reset"
                                     to={`${trip.id}`}

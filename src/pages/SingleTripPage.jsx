@@ -68,7 +68,7 @@ function SingleTripPage() {
                 </div>
               </div>
               <div className="col-3">
-                <label htmlFor="tel">numero di telefono</label>
+                <label htmlFor="tel">telefono</label>
                 <input type="number" className="form-control" id="Number" placeholder="Numero di telefono" />
               </div >
             </div >
