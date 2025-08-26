@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function SingleTripPage() {
-    return (
-        <div>SingleTripPage</div>
-    )
+  return <div>SingleTripPage</div>;
 }
 
-export default SingleTripPage
+export default SingleTripPage;
