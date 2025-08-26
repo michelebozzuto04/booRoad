@@ -42,7 +42,7 @@ function HomePage() {
                         })}
                     </div>
                 </section>
-                <section id='about_us'>
+                <section id='about_us' className='mt-5'>
 
                     <h2>About Us...</h2>
                     <div className="row">

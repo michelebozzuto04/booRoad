@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 function DefaultLayout() {
     return (
         <>
-            <header>
+            <header className='sticky-top'>
                 <Header />
             </header>
 
